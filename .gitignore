@@ -10,3 +10,5 @@
 /vendor/
 /web/bundles/
 Vagrantfile
+.vagrant
+node_modules

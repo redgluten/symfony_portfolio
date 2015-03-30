@@ -1,0 +1,16 @@
+{
+  "name": "symfony portfolio",
+  "version": "0.1.0",
+  "description": "Symfony portfolio",
+  "authors": [
+    "gluten <contact@glutendesign.com>"
+  ],
+  "homepage": "http://www.glutendesign.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ]
+}
