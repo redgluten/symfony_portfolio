@@ -1,0 +1,15 @@
+.icons-bar {
+    display: table-cell;
+    padding-right: 0.5rem;
+
+    .icon-bar {
+        background-color: $dark;
+    }
+}
+
+.menu-label {
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}

@@ -12,13 +12,16 @@
 </head>
 <body>
 
-    {% include "IPUserBundle::nav.html.twig" %}
+    <div class="container-fluid">
+        {% include "IPUserBundle::nav.html.twig" %}
+    </div>
 
     <div id="content" class="container-fluid">
         {% block content %}{% endblock %}
     </div>
 
-    <footer class="main-footer">
+    <footer class="main-footer container-fluid">
+        <hr>
         {% block footer %}
             Réalisation : <a href="http://www.glutendesign.com/">www.glutendesign.com</a>.
         {% endblock %}

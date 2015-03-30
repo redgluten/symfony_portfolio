@@ -8,6 +8,11 @@ class DefaultController extends Controller
 {
     public function indexAction($name)
     {
-        return $this->render('IPUserBundle:Default:index.html.twig', array('name' => $name));
+        $users = [
+            ['name' => 'Toto'],
+            ['name' => 'Arthur'],
+        ];
+
+        return $this->render('IPUserBundle:Default:index.html.twig', compact('name', 'users'));
     }
 }

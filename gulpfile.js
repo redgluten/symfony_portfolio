@@ -42,11 +42,14 @@ var options = minimist(process.argv.slice(2));
 // Define default destination folder
 var publicPath = 'web/';
 
+// Define Resources path
+var resourcesPath = 'src/IP/UserBundle/Resources/';
+
 // Define Assets path
-var assetsPath = 'src/IP/UserBundle/Resources/assets/';
+var assetsPath = resourcesPath + 'assets/';
 
 // Define JS Path
-var JSPath = 'src/IP/UserBundle/Resource/js/';
+var JSPath = resourcesPath + 'js/';
 
 // Define location of Bower config files
 var bowerPath = 'vendor/bower_components/';
@@ -142,7 +145,7 @@ gulp.task('uploads', function()
 
 // Views
 gulp.task('views', function() {
-    gulp.src('src/IP/UserBundle/Resources/views/**/*.twig')
+    gulp.src(resourcesPath + 'views/**/*.{twig,html,php}')
         .pipe(livereload());
 });
 
@@ -153,7 +156,7 @@ gulp.task('watch', function () {
     gulp.watch(assetsPath + 'sass/**/*.scss', ['styles']);
     gulp.watch(JSPath + '**.js', ['scripts']);
     gulp.watch(assetsPath + 'images/**', ['images']);
-    gulp.watch('resources/views/**/*.php', ['views']);
+    gulp.watch(resourcesPath + 'views/**/*.{twig,html,php}', ['views']);
 });
 
 // The default task (called when you run `gulp` from cli)
