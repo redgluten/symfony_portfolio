@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="{{ _charset }}">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
+    {% block head %}
+    {% endblock %}
+    <title>Portfolio{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    {% include "IPUserBundle::nav.html.twig" %}
+
+    <div id="content" class="container-fluid">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="main-footer">
+        {% block footer %}
+            Réalisation : <a href="http://www.glutendesign.com/">www.glutendesign.com</a>.
+        {% endblock %}
+    </footer>
+
+    <script src="{{ asset('js/app.js') }}"></script>
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

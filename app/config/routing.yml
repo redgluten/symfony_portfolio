@@ -1,3 +1,7 @@
+ip_user:
+    resource: "@IPUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

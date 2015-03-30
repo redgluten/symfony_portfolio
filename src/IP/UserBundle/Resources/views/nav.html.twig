@@ -1,0 +1,63 @@
+<div class="container-fluid">
+
+    <div class="navbar-header">
+
+        <!-- Mobile menu -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <div class="icons-bar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+            <span class="menu-bar">Menu</span>
+        </button>
+
+      <a class="navbar-brand" href="/">Portfolio</a>
+    </div>
+
+    <nav class="navbar collapse navbar-collapse main-nav" role="navigation">
+
+        <ul class="nav navbar-nav">
+            <li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Accueil</a></li>
+
+            <!-- Admin links -->
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle" type="a" id="dropdownMenuAdmin" data-toggle="dropdown" aria-expanded="false">
+                    Admin
+                    <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuAdmin">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/routeadress/">Une adresse</a></li>
+
+                </ul>
+
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav pull-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" id="dropdownMenuAdmin" data-toggle="dropdown" aria-expanded="false" href="#">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> UserName
+                    <span class="caret"></span>
+                </a>
+
+                <ul  class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuUser">
+                    <li>
+                        <a href="users/">
+                            <span class="glyphicon glyphicon-th-list"></span> Mon profil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Déconnexion
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+</div>

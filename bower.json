@@ -12,5 +12,8 @@
     "node_modules",
     "bower_components",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4"
+  }
 }

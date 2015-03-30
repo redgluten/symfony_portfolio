@@ -22,7 +22,7 @@ require_once __DIR__.'/../app/AppKernel.php';
 $env   = getenv('APP_ENV') ? getenv('APP_ENV') : 'prod';
 $debug = (bool) getenv('APP_DEBUG');
 
-$kernel = new AppKernel('prod', false);
+$kernel = new AppKernel($env, $debug);
 $kernel->loadClassCache();
 //$kernel = new AppCache($kernel);
 

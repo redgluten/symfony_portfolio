@@ -12,3 +12,7 @@
 Vagrantfile
 .vagrant
 node_modules
+web/css
+web/js
+web/fonts
+web/images
